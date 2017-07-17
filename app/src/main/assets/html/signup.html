@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="wuwujun">
+
+    <title>医疗诊断系统</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Catamaran:800,300,100">
+    <link rel='stylesheet' href='file:///android_asset/css/login.css'>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="overlay"></div>
+      <div class="content-container">
+        <div class="logsign-header">
+          <!-- 考虑用网站的icon什么的，暂时留白 -->
+        </div>
+        <div class="logsign-content">
+          <form id="signup-form" action="signup" method="post">
+            <fieldset>
+              <legend>
+                注册  <!-- 可换成其他的文字，暂时用这个 -->
+              </legend>
+              <ol>
+                <li>
+                  <div class="form-group">
+                    <span class="input-icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                    <input type="text" id="nickname" class="form-control" name="signup_user.email"
+                           tabindex="1" placeholder="邮箱" autofocus />
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <select id="gender" class="form-control" name="signup_user.sex" tabindex="2">
+                      <option value="">-- 性别 --</option>
+                      <option value=true>男</option>
+                      <option value=false>女</option>
+                    </select>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <span class="input-icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                    <input type="password" id="pass" class="form-control" name="signup_user.password"
+                           tabindex="3" placeholder="密码" />
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <span class="input-icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                    <input type="password" id="ensurepass" class="form-control"
+                           tabindex="4" placeholder="确认密码" />
+                  </div>
+                </li>
+              </ol>
+            </fieldset>
+            <button id="submitBtn" class="btn btn-md my-btn-log my-btn-full" type="submit">注册</button>
+          </form>
+          <div class="signup-choice-info">
+            <p>
+              已有账号?<a href="file:///android_asset/html/login.html">欢迎登录</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="file:///android_asset/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

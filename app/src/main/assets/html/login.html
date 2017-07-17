@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="wuwujun">
+
+    <title>医疗诊断系统</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Catamaran:800,300,100">
+    <link rel='stylesheet' href='file:///android_asset/css/login.css'>
+
+  </head>
+  <body>
+  <div class="wrapper">
+      <div class="overlay"></div>
+      <div class="content-container">
+        <div class="logsign-header">
+          <!-- 考虑用网站的icon什么的，暂时留白 -->
+        </div>
+        <div class="logsign-content">
+          <form id="login-form" method="POST" action="login">
+            <fieldset>
+              <legend>
+                登录
+              </legend>
+              <ol>
+                <li>
+                  <div class="form-group">
+                    <span class="input-icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                    <input type="text" id="user" class="form-control" name="login_user.userName"
+                           tabindex="1" placeholder="用户名" autofocus required />
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <span class="input-icon"><i class="fa fa-unlock" aria-hidden="true"></i></span>
+                    <input type="password" id="pass" class="form-control" name="login_user.password"
+                           tabindex="2" placeholder="密码" required />
+
+                  </div>
+                </li>
+              </ol>
+            </fieldset>
+            <button id="submitBtn" class="btn btn-md my-btn-log my-btn-full" type="submit">登录</button>
+            <input type="hidden" name="activityID" value="${activityID}" />
+            <input type="hidden" name="loginType" value="${loginType}" />
+          </form>
+
+
+          <div class="login-choice-info">
+            <p>
+              没有账号?<a href="file:///android_asset/html/signup.html">现在来注册吧</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="file:///android_asset/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

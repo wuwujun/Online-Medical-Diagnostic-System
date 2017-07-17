@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="wuwujun">
+
+    <title>在线诊疗-慢性肾炎</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Catamaran:800,300,100">
+    <link rel='stylesheet' href='file:///android_asset/css/index.css'>
+
+  </head>
+  <body>
+    <!-- main content start-->
+    <section id="user-details">
+      <div id="user-details-section">
+        <div class="container">
+          <div class="row">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">各项指标</h4>
+              </div>
+              <div class="panel-body">
+                <form class="form-horizontal" role="form" method="post" onsubmit="return false">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">年龄</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">血压</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" placeholder="xx-mmHg">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">比重</label>
+                    <div class="col-sm-10">
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios" checked>1.005
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios">1.010
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios">1.015
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios">1.020
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios">1.025
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">血蛋白</label>
+                    <div class="col-sm-10">
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-1" checked>0
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-1">1
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-1">2
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-1">3
+                      </label>
+                       <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-1">4
+                      </label>
+                       <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-1">5
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">血糖</label>
+                    <div class="col-sm-10">
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-2" checked>0
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-2">1
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-2">2
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-2">3
+                      </label>
+                       <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-2">4
+                      </label>
+                       <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-2">5
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">红细胞含量</label>
+                    <div class="col-sm-10">
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-3" checked>正常
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-3">异常
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">脓细胞</label>
+                    <div class="col-sm-10">
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-4" checked>正常
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-4">异常
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">脓细胞团块</label>
+                    <div class="col-sm-10">
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-5" checked>可见
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-5">不可见
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">细菌</label>
+                    <div class="col-sm-10">
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-6" checked>可见
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-6">不可见
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">随机血糖值</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" placeholder="xx-mgs/dl">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">血尿素</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" placeholder="xx-mgs/dl">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">血清肌酸酐</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" placeholder="xx-mgs/dl">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">钠含量</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" placeholder="xx-mEq/l">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">钾含量</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" placeholder="xx-mEq/l">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">血红蛋白</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" placeholder="gms">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">红细胞压积</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">白血球数</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" placeholder="xx-cells/cumm">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">钾含量</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" placeholder="millions/cmm">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">高血压</label>
+                    <div class="col-sm-10">
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-7" checked>是
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-7">否
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">糖尿病</label>
+                    <div class="col-sm-10">
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-8" checked>是
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-8">否
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">冠状动脉疾病</label>
+                    <div class="col-sm-10">
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-9" checked>是
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-9">否
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">胃口</label>
+                    <div class="col-sm-10">
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-10" checked>好
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-10">差
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">足部水肿</label>
+                    <div class="col-sm-10">
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-11" checked>是
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-11">否
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">贫血症</label>
+                    <div class="col-sm-10">
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-12" checked>是
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-12">否
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">您是否同意我们使用您的数据？</label>
+                    <div class="col-sm-10">
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-6" checked>同意
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optionsRadios-6">不同意
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <p class="col-sm-2 text-success">数据只包括病情信息，不包含您的姓名等隐私。</p>
+                    <p class="col-sm-2 text-success">这些信息将提升我们的专家诊断系统的准确度。</p>
+                    <p class="col-sm-2 text-success">我们承诺不会将数据泄露给第三方。</p>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <a href="#" class="btn btn-primary" type="button">提交</a>
+                    </div>
+                  </div>              
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="file:///android_asset/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="file:///android_asset/js/index.js"></script>
+  </body>
+</html>
