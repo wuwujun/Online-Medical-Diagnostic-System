@@ -7,28 +7,80 @@
     <meta name="author" content="wuwujun">
 
     <title>医疗诊断系统</title>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="file:///android_asset/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Catamaran:800,300,100">
     <link rel='stylesheet' href='file:///android_asset/css/index.css'>
 
   </head>
   <body>
-    
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top my-navbar" role="navigation">
+        <div class="container-fluid container my-nav">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand">医疗诊断系统</span>
+          </div>
+          <div id="menu" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right my-navbar-menu">
+              <li>
+                <a href="#">用户xx您好！</a>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                   aria-haspopup="true" aria-expanded="false">
+                  查询疾病类型 <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="file:///android_asset/html/heart.html">心脏病</a>
+                  </li>
+                  <li>
+                    <a href="file:///android_asset/html/kidney.html">慢性肾炎</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">登出</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <section>
-      <div id="about-me-section">
-        <div class="overlay"></div>
+      <div id="newlog-section">
         <div class="container">
           <div class="row">
-            <div class="col-md-offset-3 col-md-6 col-sm-12">
-              <div class="row">
-                <div class="col-xs-8 col-xs-offset-2 my-block">
-                  <a href="#" class="btn btn-block my-btn" type="button">在线诊断</a>
-                </div>
-                <div class="col-xs-8 col-xs-offset-2 my-block">
-                  <a href="#" class="btn btn-block my-btn" type="button">分析结果</a>
-                </div>
-               </div> 
+            <div class="table-responsive table-bordered">
+              <table class="table table-hover">
+                <tr>
+                  <td>疾病类型</td>
+                  <td>病历详情</td>
+                  <td>查询时间</td>
+                  <td>患病概率</td>
+                  <td>是否反馈</td>
+                </tr>
+                <tr>
+                  <td>心脏病</td>
+                  <td><button class="btn btn-primary btn-xs">查看</button></td>
+                  <td>2017/01/03</td>
+                  <td>未患心脏病</td>
+                  <td><button class="btn btn-success btn-xs">反馈</button></td>
+                </tr>
+                <tr>
+                  <td>心脏病</td>
+                  <td><button class="btn btn-primary btn-xs">查看</button></td>
+                  <td>2017/01/03</td>
+                  <td>未患心脏病</td>
+                  <td><button class="btn btn-success btn-xs">反馈</button></td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
@@ -38,8 +90,7 @@
 
 
     <script type="text/javascript" src="file:///android_asset/js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="file:///android_asset/js/index.js"></script>
+    <script type="text/javascript" src="file:///android_asset/js/bootstrap.min.js"></script>
 
 
   </body>

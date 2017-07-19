@@ -1,80 +1,59 @@
 body {
 	font-family: 'Catamaran', 'Microsoft YaHei', sans-serif;
-	background: #333
-		/*url(http://om107w423.bkt.clouddn.com/patrick-tomasso-71909.jpg)*/
-		url('file:///android_asset/images/index.jpg')
-		no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 }
 
-header .overlay {
-	background-color: #fff;
-	opacity: 0.7;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	width: 100%;
-	height: 70px;
-	border-bottom: 1px solid #111;
-}
 
 /*===========================
 =============NAVBAR==========
 ============================*/
 .my-navbar {
 	border: 0 none;
-	background-color: transparent;
-}
-
-@media only screen and (max-width: 767px) and (min-width: 250px) {
-	.navbar-default .navbar-collapse {
-		background-color: #fff;
-		opacity: 0.7;
-	}
+	background-color: #ffdd88;
 }
 
 .my-navbar .navbar-brand {
-	color: #000 !important;
-	font-size: 28px;
-	margin-top: 19px;
+	color: #fff;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: -10px;
+	margin-left: 5px;
 	font-weight: 600;
-	padding: 20px 0 0;
 	line-height: 0;
 }
 
 .my-navbar .navbar-toggle {
-	margin-top: 19px;
+	margin-top: 8px;
 	border: none;
 }
 
-.my-navbar .navbar-toggle:hover, .my-navbar .navbar-toggle:focus {
+.my-navbar .navbar-toggle:hover,
+.my-navbar .navbar-toggle:focus {
 	background: transparent;
 }
 
 .my-navbar .navbar-toggle .icon-bar {
-	background-color: #000;
+	background-color: #fff;
 }
 
 .my-navbar-menu {
 	margin-top: 15px;
 }
 
-.my-navbar .my-navbar-menu>li>a {
-	color: #000 !important;
+.my-navbar-menu .dropdown-menu > li > a {
+    text-align: center;
+}
+
+.my-navbar .my-navbar-menu > li > a {
+	color: #fff;
 	font-size: 14px;
 	font-weight: 550;
 	letter-spacing: 1.5px;
 	text-align: center;
 }
 
-.my-navbar .my-navbar-menu>li>a:hover, .my-navbar .my-navbar-menu>li>a:focus
-	{
-	/*color: #ff8 !important;*/
-	color: #1ecfd6 !important;
+.my-navbar .my-navbar-menu > li > a:hover,
+.my-navbar .my-navbar-menu > li > a:focus {
+	color: #000;
 	transition-duration: .3s;
 }
 
@@ -83,11 +62,13 @@ header .overlay {
 ==========================================*/
 #about-me-section {
 	position: relative;
+	margin-top: 70px;
 	padding-top: 160px;
-	padding-bottom: 275px;
+	padding-bottom: 260px;
 }
 
-#about-me-section .overlay, #contact-section .overlay {
+#about-me-section .overlay,
+#contact-section .overlay {
 	background-color: #111;
 	opacity: 0.3;
 	position: absolute;
@@ -98,7 +79,7 @@ header .overlay {
 	height: 100%;
 }
 
-.my-text>h1 {
+.my-text > h1 {
 	font-size: 30px;
 	letter-spacing: -1px;
 	font-weight: 800;
@@ -156,6 +137,13 @@ header .overlay {
 	color: #fff;
 }
 
+#user-details-section,
+#follow-section,
+#newlog-section {
+	position: relative;
+	margin-top: 55px;
+}
+
 #other-details-section,
 #edu-exps-section,
 #work-exps-section {
@@ -164,12 +152,23 @@ header .overlay {
 	padding-top: 70px;
 }
 
-#work-exps-section {
-	position: relative;
+
+#newlogForm {
+	border: 10px solid rgba(255, 255, 255, .5);
+	background: white;
+	background-clip: padding-box;
+}
+
+#log-section {
+	margin-top: -100px;
+	padding-top: 200px;
 	margin-bottom: 50px;
 	padding-bottom: 110px;
 }
 
+#newlogForm form {
+	padding-top: 15px;
+}
 
 /*====================================
 ==============FOOTER==================
@@ -231,18 +230,4 @@ header .overlay {
 
 .my-btn:hover, .my-btn:active, .my-btn:focus {
 	color: #ff8;
-}
-
-
-/*====================================
-==============MODAL==================
-====================================*/
-
-#myModal-1 .modal-form {
-	padding-left: 20px;
-	padding-right: 60px;
-}
-
-#myModal-1 .modal-btn {
-	
 }

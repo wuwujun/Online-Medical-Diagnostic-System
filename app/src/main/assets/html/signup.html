@@ -7,54 +7,66 @@
     <meta name="author" content="wuwujun">
 
     <title>医疗诊断系统</title>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="file:///android_asset/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Catamaran:800,300,100">
     <link rel='stylesheet' href='file:///android_asset/css/login.css'>
+    <link rel='stylesheet' href='file:///android_asset/css/index.css'>
+      <link rel="stylesheet" href="file:///android_asset/css/bootstrapValidator.min.css">
+
+      <style type="text/css">
+        .has-error .help-block {
+            color: #FFE869;
+        }
+      </style>
 
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top my-navbar" role="navigation">
+        <div class="container-fluid container">
+          <div class="navbar-header">
+            <span class="navbar-brand">医疗诊断系统</span>
+          </div>
+        </div>
+      </nav>
+    </header>
     <div class="wrapper">
       <div class="overlay"></div>
       <div class="content-container">
         <div class="logsign-header">
-          <!-- 考虑用网站的icon什么的，暂时留白 -->
         </div>
         <div class="logsign-content">
-          <form id="signup-form" action="signup" method="post">
+          <form id="signup-form" action="signup" method="post" onsubmit="return checkPass()">
             <fieldset>
               <legend>
-                注册  <!-- 可换成其他的文字，暂时用这个 -->
+                注册
               </legend>
               <ol>
                 <li>
                   <div class="form-group">
                     <span class="input-icon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                    <input type="text" id="nickname" class="form-control" name="signup_user.email"
-                           tabindex="1" placeholder="邮箱" autofocus />
-                  </div>
-                </li>
-                <li>
-                  <div class="form-group">
-                    <select id="gender" class="form-control" name="signup_user.sex" tabindex="2">
-                      <option value="">-- 性别 --</option>
-                      <option value=true>男</option>
-                      <option value=false>女</option>
-                    </select>
+                    <input type="text" id="email" class="form-control" name="username"
+                           tabindex="1" placeholder="邮箱" autofocus required/>
                   </div>
                 </li>
                 <li>
                   <div class="form-group">
                     <span class="input-icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                    <input type="password" id="pass" class="form-control" name="signup_user.password"
-                           tabindex="3" placeholder="密码" />
+                    <input type="password" id="pass" class="form-control" name="password"
+                           tabindex="3" placeholder="密码6-9位，仅含字母/数字" pattern="[0-9a-zA-Z]+"
+                           minlength="6" maxlength="9" required/>
                   </div>
                 </li>
                 <li>
                   <div class="form-group">
                     <span class="input-icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
                     <input type="password" id="ensurepass" class="form-control"
-                           tabindex="4" placeholder="确认密码" />
+                           tabindex="5" placeholder="确认密码" minlength="6" maxlength="9"
+                           pattern="[0-9a-zA-Z]+" required
+                           onchange="checkPass()" />
+                      <small id="helpPass" class="help-block"
+                             style="color:#FFE869; display: none;">两次输入的密码不一致?</small>
                   </div>
                 </li>
               </ol>
@@ -71,6 +83,23 @@
     </div>
 
     <script type="text/javascript" src="file:///android_asset/js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="file:///android_asset/js/bootstrap.min.js"></script>
+    <script>
+
+        function checkPass() {
+          var pass = document.getElementById('pass').value;
+          var ensurepass = document.getElementById('ensurepass').value;
+          var help = document.getElementById('helpPass');
+          var submitBtn = document.getElementById('submitBtn');
+          if (pass != ensurepass) {
+            help.style.display = 'inline';
+            return false;
+          } else {
+            help.style.display = 'none';
+            return true;
+          }
+        }
+
+    </script>
   </body>
 </html>

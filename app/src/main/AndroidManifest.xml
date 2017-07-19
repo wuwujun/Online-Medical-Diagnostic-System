@@ -13,21 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activity_main"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme">
-
-        </activity>
-        <activity
             android:name=".activity_index"
-            android:label="@string/title_activity_index"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 

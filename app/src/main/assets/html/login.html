@@ -7,18 +7,27 @@
     <meta name="author" content="wuwujun">
 
     <title>医疗诊断系统</title>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="file:///android_asset/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Catamaran:800,300,100">
     <link rel='stylesheet' href='file:///android_asset/css/login.css'>
+    <link rel='stylesheet' href='file:///android_asset/css/index.css'>
 
   </head>
   <body>
-  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top my-navbar" role="navigation">
+        <div class="container-fluid container">
+          <div class="navbar-header">
+            <span class="navbar-brand">医疗诊断系统</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="wrapper">
       <div class="overlay"></div>
       <div class="content-container">
         <div class="logsign-header">
-          <!-- 考虑用网站的icon什么的，暂时留白 -->
         </div>
         <div class="logsign-content">
           <form id="login-form" method="POST" action="login">
@@ -30,23 +39,22 @@
                 <li>
                   <div class="form-group">
                     <span class="input-icon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                    <input type="text" id="user" class="form-control" name="login_user.userName"
-                           tabindex="1" placeholder="用户名" autofocus required />
+                    <input type="text" id="email" class="form-control" name="username"
+                           tabindex="1" placeholder="邮箱" autofocus required />
                   </div>
                 </li>
                 <li>
                   <div class="form-group">
                     <span class="input-icon"><i class="fa fa-unlock" aria-hidden="true"></i></span>
-                    <input type="password" id="pass" class="form-control" name="login_user.password"
-                           tabindex="2" placeholder="密码" required />
+                    <input type="password" id="pass" class="form-control" name="password"
+                           tabindex="2" placeholder="密码" minlength="6" maxlength="9"
+                           pattern="[a-zA-Z0-9]+" required />
 
                   </div>
                 </li>
               </ol>
             </fieldset>
-            <button id="submitBtn" class="btn btn-md my-btn-log my-btn-full" type="submit">登录</button>
-            <input type="hidden" name="activityID" value="${activityID}" />
-            <input type="hidden" name="loginType" value="${loginType}" />
+            <Button id="submitBtn" class="btn btn-md my-btn-log my-btn-full" type="submit">登录</Button>
           </form>
 
 
@@ -58,7 +66,9 @@
         </div>
       </div>
     </div>
+
     <script type="text/javascript" src="file:///android_asset/js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="file:///android_asset/js/bootstrap.min.js"></script>
+
   </body>
 </html>
